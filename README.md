@@ -31,7 +31,6 @@
 
 🔗 https://chiranjeev-2707.github.io/amazon_clone/
 
-## 📂 Run Locally
 
 
 

@@ -29,7 +29,7 @@
 
 ## 🚀 Live Demo
 
-🔗https://amazonclone-seven-ruddy.vercel.app/
+🔗https://amazon-clone-ruddy-zeta.vercel.app/
 
 
 

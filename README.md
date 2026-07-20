@@ -29,7 +29,7 @@
 
 ## 🚀 Live Demo
 
-🔗 https://chiranjeev-2707.github.io/amazon_clone/
+🔗https://amazonclone-cqorgbi6r-chiranjeev-2707s-projects.vercel.app/
 
 
 

@@ -276,7 +276,7 @@ hr{
     margin-bottom: 150px;
     width: 34px;
     height: 52px;
-    background-image: url(/images/left-arrow.png);
+    background-image: url(images/left-arrow.png);
     background-size: cover;
 }
 .rb{
@@ -285,7 +285,7 @@ hr{
     margin-bottom: 150px;
     width: 34px;
     height: 52px;
-    background-image: url(/images/right-arrow.png);
+    background-image: url(images/right-arrow.png);
     background-size: cover;
 }
 .hero-msg{

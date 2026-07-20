@@ -400,5 +400,33 @@
         </div>
         
     </div>
+<script>
+    function adjustDesktopZoomOnMobile() {
+        // Check if the user has toggled "Desktop site" on a mobile device
+        const isMobileDevice = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+        
+        if (isMobileDevice) {
+            // Get the actual width of the phone screen
+            const deviceWidth = window.screen.width;
+            // The width the desktop site is trying to render at (matches our max layout size)
+            const targetWidth = 1200; 
+            
+            if (deviceWidth < targetWidth) {
+                // Calculate the perfect scale ratio based on the phone's dimensions
+                const scaleRatio = deviceWidth / targetWidth;
+                
+                // Inject a meta tag to force the phone to zoom out perfectly
+                let viewport = document.querySelector('meta[name="viewport"]');
+                if (viewport) {
+                    viewport.setAttribute('content', `width=${targetWidth}, initial-scale=${scaleRatio}, minimum-scale=${scaleRatio}, maximum-scale=${scaleRatio}, user-scalable=yes`);
+                }
+            }
+        }
+    }
+
+    // Run on load and when orientation changes
+    window.addEventListener('load', adjustDesktopZoomOnMobile);
+    window.addEventListener('resize', adjustDesktopZoomOnMobile);
+</script>
 </body>
 </html>
